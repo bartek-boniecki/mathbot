@@ -9,7 +9,7 @@ load_dotenv()
 
 st.title("🧠 Generator zadań matematycznych Bartka")
 
-klasa = st.sidebar.selectbox("🧮 Klasa ucznia, gdzie 1-8 to klasy szkoły podstawowej, a 9-12 to klasy szkół ponadpodstawowych:", [str(i) for i in range(1, 18)])
+klasa = st.sidebar.selectbox("🧮 Klasa ucznia, gdzie 1-8 to klasy szkoły podstawowej, 9-12 to klasy szkół ponadpodstawowych, a 13-17 to roczniki studiów wyższych", [str(i) for i in range(1, 18)])
 dzial = st.sidebar.text_input("Wskaż z jakiego działu potrzebujesz zadań, np.: arytmetyka (ułamki, potęgi i pierwiastki), algebra (wyrażenia algebraiczne, równania i nierówności), geometria (figury płaskie, figury przestrzenne, geometria analityczna), statystyka opisowa, rachunek prawdopodobieństwa, funkcje, ciągi, kombinatoryka, analiza matematyczna:  ", "pierwiastki")
 licznik = st.sidebar.slider("📊 Ile zadań chcesz wygenerować?", 1, 20, 3)
 
